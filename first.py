@@ -29,7 +29,7 @@ def getRadius():
 
 #this will scrape the relevent pizza chain's website and try to parse their menu
 def showMenu():
-	if pizzaChoice = "Apache":
+	if pizzaChoice == "Apache":
 
 		page = requests.get('https://www.apache.ie/order/pizza')
 		tree = html.fromstring(page.content)
@@ -37,7 +37,7 @@ def showMenu():
 		print("What would you like to order? \nChoose from: ")
 		print("menu", menu)
 
-	elif pizzaChoice = "Dominos":
+	elif pizzaChoice == "Dominos":
 
 		page = requests.get('https://www.dominos.ie/menu?eircode=1#')
 		tree = html.fromstring(page.content)
